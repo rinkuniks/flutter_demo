@@ -3,6 +3,6 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text('Home');
+    return Center(child: Text('Home'));
   }
 }

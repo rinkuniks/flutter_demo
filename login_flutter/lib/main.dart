@@ -18,14 +18,8 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.yellowAccent
       ),
       home: Scaffold(
-        // appBar: AppBar(
-        //   title: Text(
-        //     'Login Page',
-        //     // style: TextStyle(color: Colors.black),
-        //   ),
-        //   centerTitle: true,
-        // ),
-        body: CustomBottomNavigation(),
+        body: LoginUI(),
+        // body: CustomBottomNavigation(),
       ),
     );
   }

@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:login_flutter/Dashboard.dart';
+import 'CustomBottomNavigation.dart';
 import 'main.dart';
 
 class LoginUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          'Login Page',
+          // style: TextStyle(color: Colors.black),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.black,
+      ),
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         children: [
@@ -52,7 +61,8 @@ class LoginUI extends StatelessWidget {
                   onPressed: () => {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Dashboard()),
+                      // MaterialPageRoute(builder: (context) => Dashboard()),
+                      MaterialPageRoute(builder: (context) => CustomBottomNavigation()),
                     )
                   },
                 )),
