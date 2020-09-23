@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:login_flutter/Dashboard.dart';
 import 'CustomBottomNavigation.dart';
 import 'main.dart';
+import 'dbmanager.dart';
 
 class LoginUI extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +23,7 @@ class LoginUI extends StatelessWidget {
         children: [
           Container(
             margin: const EdgeInsets.only(left: 20, right: 20),
-            child: TextField(
+            child: TextFormField(
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
@@ -36,7 +38,7 @@ class LoginUI extends StatelessWidget {
           Container(
               margin: const EdgeInsets.all(20),
               child: SizedBox(
-                child: TextField(
+                child: TextFormField(
                   keyboardType: TextInputType.text,
                   obscureText: true,
                   decoration: InputDecoration(

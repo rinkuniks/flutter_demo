@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:login_flutter/LoginPage.dart';
 import 'LoginUI.dart';
+import 'LoginPage.dart';
 import 'CustomBottomNavigation.dart';
 
 void main() {
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.yellowAccent
       ),
       home: Scaffold(
-        body: LoginUI(),
+        body: LoginPage(),
         // body: CustomBottomNavigation(),
       ),
     );
